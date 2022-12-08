@@ -9,6 +9,39 @@ AppNameTitle="${AppName}  -  ${AppVersion}"
 msgBoxText="null"
 
 ###############################################################################
+## Menu Idioma
+###############################################################################
+_menuChangeLanguage(){
+    MainMenuBox=$(zenity --list \
+                        --title="${AppNameTitle}" \
+                        --height=320 \
+                        --width=640 \
+                        --ok-label="Ok" \
+                        --cancel-label="Cancel" \
+                        --text="Select language" \
+                        --checklist \
+                        --column="" \
+                        --column="Select:" \
+                        --column="Description:" \
+                        1 "es_ES" "Spanish (Spain)" \
+                        2 "language" "Change Steam Deck language." \
+                        3 "SSH" "Install SSH server in Steam Deck." \
+                        4 "AUR" "Install AUR Package Manager." \
+                        5 "lutris" "Install Lutris Game Manager (Usefull for Non-Steam Games)" \
+                        6 "protonup-qt" "Proton GE Installer (Recomended for non compatible Steam Deck Games)")
+
+    ans=$?
+    if [ $ans -eq 0 ]
+    then
+        echo "Has elegido: ${MainMenuBox}"
+        _checkMenu
+    else
+        echo "Has Salido del sistema"
+        exit
+    fi
+}
+
+###############################################################################
 ## Steamos ReadOnly Menu
 ###############################################################################
 _steamos-readonly(){
