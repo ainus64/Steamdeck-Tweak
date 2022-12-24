@@ -454,21 +454,24 @@ QToolBox::tab {
                      <property name="currentIndex">
                       <number>0</number>
                      </property>
-                     <widget class="QWidget" name="Install">
+                     <widget class="QWidget" name="System">
                       <property name="geometry">
                        <rect>
                         <x>0</x>
                         <y>0</y>
-                        <width>186</width>
-                        <height>388</height>
+                        <width>200</width>
+                        <height>281</height>
                        </rect>
+                      </property>
+                      <property name="accessibleName">
+                       <string/>
                       </property>
                       <attribute name="icon">
                        <iconset resource="theme.qrc">
                         <normaloff>:/theme/icons/package.svg</normaloff>:/theme/icons/package.svg</iconset>
                       </attribute>
                       <attribute name="label">
-                       <string>Install</string>
+                       <string>Sistema</string>
                       </attribute>
                       <layout class="QVBoxLayout" name="verticalLayout_13">
                        <item alignment="Qt::AlignTop">
@@ -509,7 +512,7 @@ QToolBox::tab {
                              </font>
                             </property>
                             <property name="text">
-                             <string>Proton GE 1.X</string>
+                             <string>Super Usuario</string>
                             </property>
                            </widget>
                           </item>
@@ -524,7 +527,7 @@ QToolBox::tab {
                              </font>
                             </property>
                             <property name="text">
-                             <string>Proton GE 2.X</string>
+                             <string>Partición</string>
                             </property>
                            </widget>
                           </item>
@@ -539,7 +542,7 @@ QToolBox::tab {
                              </font>
                             </property>
                             <property name="text">
-                             <string>Proton GE 3.X</string>
+                             <string>Idioma</string>
                             </property>
                            </widget>
                           </item>
@@ -554,65 +557,7 @@ QToolBox::tab {
                              </font>
                             </property>
                             <property name="text">
-                             <string>Proton GE 4.X</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QPushButton" name="installButton_4">
-                            <property name="font">
-                             <font>
-                              <family>Betina Sans</family>
-                              <pointsize>-1</pointsize>
-                              <weight>75</weight>
-                              <bold>true</bold>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>Proton GE 5.X</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QPushButton" name="installButton_5">
-                            <property name="font">
-                             <font>
-                              <family>Betina Sans</family>
-                              <pointsize>-1</pointsize>
-                              <weight>75</weight>
-                              <bold>true</bold>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>Proton GE 6X</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QPushButton" name="installButton_6">
-                            <property name="text">
-                             <string>PushButton</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QPushButton" name="installButton_7">
-                            <property name="text">
-                             <string>PushButton</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QPushButton" name="installButton_8">
-                            <property name="text">
-                             <string>PushButton</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QPushButton" name="installButton_9">
-                            <property name="text">
-                             <string>PushButton</string>
+                             <string>Herramientas</string>
                             </property>
                            </widget>
                           </item>
@@ -621,7 +566,7 @@ QToolBox::tab {
                        </item>
                       </layout>
                      </widget>
-                     <widget class="QWidget" name="Uninstall">
+                     <widget class="QWidget" name="Software">
                       <property name="geometry">
                        <rect>
                         <x>0</x>
@@ -635,7 +580,7 @@ QToolBox::tab {
                         <normaloff>:/theme/icons/trash-2.svg</normaloff>:/theme/icons/trash-2.svg</iconset>
                       </attribute>
                       <attribute name="label">
-                       <string>Uninstall</string>
+                       <string>Software</string>
                       </attribute>
                       <layout class="QVBoxLayout" name="verticalLayout_14">
                        <item alignment="Qt::AlignTop">
@@ -658,7 +603,7 @@ QToolBox::tab {
                              </font>
                             </property>
                             <property name="text">
-                             <string>PushButton</string>
+                             <string>Proton Installer</string>
                             </property>
                            </widget>
                           </item>
@@ -673,52 +618,14 @@ QToolBox::tab {
                              </font>
                             </property>
                             <property name="text">
-                             <string>PushButton</string>
+                             <string>Software Adicional</string>
                             </property>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="unInstallButton_3">
-                            <property name="font">
-                             <font>
-                              <family>Betina Sans</family>
-                              <pointsize>-1</pointsize>
-                              <weight>75</weight>
-                              <bold>true</bold>
-                             </font>
-                            </property>
+                           <widget class="QPushButton" name="pushButton_3">
                             <property name="text">
-                             <string>PushButton</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QPushButton" name="unInstallButton_4">
-                            <property name="font">
-                             <font>
-                              <family>Betina Sans</family>
-                              <pointsize>-1</pointsize>
-                              <weight>75</weight>
-                              <bold>true</bold>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>PushButton</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QPushButton" name="unInstallButton_5">
-                            <property name="font">
-                             <font>
-                              <family>Betina Sans</family>
-                              <pointsize>-1</pointsize>
-                              <weight>75</weight>
-                              <bold>true</bold>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>PushButton</string>
+                             <string>Steam Integration</string>
                             </property>
                            </widget>
                           </item>
@@ -783,7 +690,7 @@ QToolBox::tab {
                           <item>
                            <widget class="QPushButton" name="pushButton">
                             <property name="text">
-                             <string>PushButton</string>
+                             <string>Pantalla</string>
                             </property>
                            </widget>
                           </item>
