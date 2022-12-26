@@ -2,41 +2,34 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-APPNAME = "PROTONDECK"
-VERSION = "0.0.7"
+APPNAME = "Tweak-Deck"
+VERSION = "0.0.1"
 ##  Author: Ainus64
-##  gitlab: https://gitlab.com/misjuegosenlinux/ProtonDeck
+##  git: https://github.com/ainus64/Steamdeck-Tweak
 ################################################################################
 #
 # Dependencies
-# pip install requests
 #
 ################################################################################
 ##  IMPORT GUI FILE AND SYSTEM
-#from re import X
-#from turtle import width
 from PySide2 import *
 from ui_interface import * # Import GUI
-from module_lib import * # Download Module
-from listDB import *
 from pathlib import Path
 import sys
 import os
 import json
-import wget
 ################################################################################
 
 #################################################################################
 ## Variables and system folder 
 #################################################################################
 APP = APPNAME + " - " + VERSION
-#button_start_install = "Start Install"
-download_dir = "/mnt/Juegos/tmp/proton/"
-install_dir = "/mnt/Juegos/tmp/installation/"
-Download = False
+#download_dir = "/mnt/Juegos/tmp/proton/"
+#install_dir = "/mnt/Juegos/tmp/installation/"
+#Download = False
 
 # Check TMP Folder
-Path(download_dir).mkdir(parents=True, exist_ok=True)
+#Path(download_dir).mkdir(parents=True, exist_ok=True)
 
 
 ################################################################################
@@ -44,7 +37,7 @@ Path(download_dir).mkdir(parents=True, exist_ok=True)
 ################################################################################
 
 # Set protonge.download, protonge.install, protonge.uninstall
-protonGE = protonClass()
+#protonGE = protonClass()
 #################################################################################
 
 class MainWindow(QMainWindow):
@@ -91,6 +84,7 @@ class MainWindow(QMainWindow):
         #print (list[0]) # uncomented only for TEST
         #print (ProtonDescription[list[0]]) # uncomented only for TEST
 
+        """
         self.ui.installButton_0.setText(list[0])
         self.ui.installButton_1.setText(list[1])
         self.ui.installButton_2.setText(list[2])
@@ -101,8 +95,10 @@ class MainWindow(QMainWindow):
         self.ui.installButton_7.setText(list[7])
         self.ui.installButton_8.setText(list[8])
         self.ui.installButton_9.setText(list[9])
+        """
 
         self.ui.open_close_side_bar_btn.clicked.connect(lambda: self.slideLeftMenu())
+        """
         self.ui.installButton_0.clicked.connect(lambda: self.selectInstall(list[0], ProtonDescription[list[0]]))
         self.ui.installButton_1.clicked.connect(lambda: self.selectInstall(list[1], ProtonDescription[list[1]]))
         self.ui.installButton_2.clicked.connect(lambda: self.selectInstall(list[2], ProtonDescription[list[2]]))
@@ -114,6 +110,7 @@ class MainWindow(QMainWindow):
         self.ui.installButton_8.clicked.connect(lambda: self.selectInstall(list[8], ProtonDescription[list[8]]))
         self.ui.installButton_9.clicked.connect(lambda: self.selectInstall(list[9], ProtonDescription[list[9]]))
         #######################################################################  
+        """
 
         #######################################################################
         # Function to Move window on mouse drag event on the tittle bar

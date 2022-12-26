@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfacePxlSJH.ui'
+## Form generated from reading UI file 'interfaceEpIJAi.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.3
 ##
@@ -255,12 +255,12 @@ class Ui_MainWindow(object):
 "	background-color:rgb(23,26,2f);\n"
 "	text-align: left;\n"
 "}")
-        self.Install = QWidget()
-        self.Install.setObjectName(u"Install")
-        self.Install.setGeometry(QRect(0, -107, 186, 388))
-        self.verticalLayout_13 = QVBoxLayout(self.Install)
+        self.System = QWidget()
+        self.System.setObjectName(u"System")
+        self.System.setGeometry(QRect(0, 0, 200, 281))
+        self.verticalLayout_13 = QVBoxLayout(self.System)
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
-        self.Caja_de_botones = QFrame(self.Install)
+        self.Caja_de_botones = QFrame(self.System)
         self.Caja_de_botones.setObjectName(u"Caja_de_botones")
         self.Caja_de_botones.setStyleSheet(u"")
         self.Caja_de_botones.setFrameShape(QFrame.StyledPanel)
@@ -297,50 +297,18 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_15.addWidget(self.installButton_3)
 
-        self.installButton_4 = QPushButton(self.Caja_de_botones)
-        self.installButton_4.setObjectName(u"installButton_4")
-        self.installButton_4.setFont(font3)
-
-        self.verticalLayout_15.addWidget(self.installButton_4)
-
-        self.installButton_5 = QPushButton(self.Caja_de_botones)
-        self.installButton_5.setObjectName(u"installButton_5")
-        self.installButton_5.setFont(font3)
-
-        self.verticalLayout_15.addWidget(self.installButton_5)
-
-        self.installButton_6 = QPushButton(self.Caja_de_botones)
-        self.installButton_6.setObjectName(u"installButton_6")
-
-        self.verticalLayout_15.addWidget(self.installButton_6)
-
-        self.installButton_7 = QPushButton(self.Caja_de_botones)
-        self.installButton_7.setObjectName(u"installButton_7")
-
-        self.verticalLayout_15.addWidget(self.installButton_7)
-
-        self.installButton_8 = QPushButton(self.Caja_de_botones)
-        self.installButton_8.setObjectName(u"installButton_8")
-
-        self.verticalLayout_15.addWidget(self.installButton_8)
-
-        self.installButton_9 = QPushButton(self.Caja_de_botones)
-        self.installButton_9.setObjectName(u"installButton_9")
-
-        self.verticalLayout_15.addWidget(self.installButton_9)
-
 
         self.verticalLayout_13.addWidget(self.Caja_de_botones, 0, Qt.AlignTop)
 
         icon = QIcon()
         icon.addFile(u":/theme/icons/package.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.toolBox.addItem(self.Install, icon, u"Install")
-        self.Uninstall = QWidget()
-        self.Uninstall.setObjectName(u"Uninstall")
-        self.Uninstall.setGeometry(QRect(0, 0, 200, 281))
-        self.verticalLayout_14 = QVBoxLayout(self.Uninstall)
+        self.toolBox.addItem(self.System, icon, u"Sistema")
+        self.Software = QWidget()
+        self.Software.setObjectName(u"Software")
+        self.Software.setGeometry(QRect(0, 0, 200, 281))
+        self.verticalLayout_14 = QVBoxLayout(self.Software)
         self.verticalLayout_14.setObjectName(u"verticalLayout_14")
-        self.frame_13 = QFrame(self.Uninstall)
+        self.frame_13 = QFrame(self.Software)
         self.frame_13.setObjectName(u"frame_13")
         self.frame_13.setFrameShape(QFrame.StyledPanel)
         self.frame_13.setFrameShadow(QFrame.Raised)
@@ -358,30 +326,17 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_16.addWidget(self.unInstallButton_2)
 
-        self.unInstallButton_3 = QPushButton(self.frame_13)
-        self.unInstallButton_3.setObjectName(u"unInstallButton_3")
-        self.unInstallButton_3.setFont(font3)
+        self.pushButton_3 = QPushButton(self.frame_13)
+        self.pushButton_3.setObjectName(u"pushButton_3")
 
-        self.verticalLayout_16.addWidget(self.unInstallButton_3)
-
-        self.unInstallButton_4 = QPushButton(self.frame_13)
-        self.unInstallButton_4.setObjectName(u"unInstallButton_4")
-        self.unInstallButton_4.setFont(font3)
-
-        self.verticalLayout_16.addWidget(self.unInstallButton_4)
-
-        self.unInstallButton_5 = QPushButton(self.frame_13)
-        self.unInstallButton_5.setObjectName(u"unInstallButton_5")
-        self.unInstallButton_5.setFont(font3)
-
-        self.verticalLayout_16.addWidget(self.unInstallButton_5)
+        self.verticalLayout_16.addWidget(self.pushButton_3)
 
 
         self.verticalLayout_14.addWidget(self.frame_13, 0, Qt.AlignTop)
 
         icon1 = QIcon()
         icon1.addFile(u":/theme/icons/trash-2.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.toolBox.addItem(self.Uninstall, icon1, u"Uninstall")
+        self.toolBox.addItem(self.Software, icon1, u"Software")
         self.Options = QWidget()
         self.Options.setObjectName(u"Options")
         self.Options.setGeometry(QRect(0, 0, 200, 281))
@@ -650,28 +605,23 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.AppName.setText(QCoreApplication.translate("MainWindow", u"APPNAME", None))
-        self.installButton_0.setText(QCoreApplication.translate("MainWindow", u"Proton GE 1.X", None))
-        self.installButton_1.setText(QCoreApplication.translate("MainWindow", u"Proton GE 2.X", None))
-        self.installButton_2.setText(QCoreApplication.translate("MainWindow", u"Proton GE 3.X", None))
-        self.installButton_3.setText(QCoreApplication.translate("MainWindow", u"Proton GE 4.X", None))
-        self.installButton_4.setText(QCoreApplication.translate("MainWindow", u"Proton GE 5.X", None))
-        self.installButton_5.setText(QCoreApplication.translate("MainWindow", u"Proton GE 6X", None))
-        self.installButton_6.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.installButton_7.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.installButton_8.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.installButton_9.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.toolBox.setItemText(self.toolBox.indexOf(self.Install), QCoreApplication.translate("MainWindow", u"Install", None))
-        self.unInstallButton_1.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.unInstallButton_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.unInstallButton_3.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.unInstallButton_4.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.unInstallButton_5.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.toolBox.setItemText(self.toolBox.indexOf(self.Uninstall), QCoreApplication.translate("MainWindow", u"Uninstall", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+#if QT_CONFIG(accessibility)
+        self.System.setAccessibleName("")
+#endif // QT_CONFIG(accessibility)
+        self.installButton_0.setText(QCoreApplication.translate("MainWindow", u"Super Usuario", None))
+        self.installButton_1.setText(QCoreApplication.translate("MainWindow", u"Partici\u00f3n", None))
+        self.installButton_2.setText(QCoreApplication.translate("MainWindow", u"Idioma", None))
+        self.installButton_3.setText(QCoreApplication.translate("MainWindow", u"Herramientas", None))
+        self.toolBox.setItemText(self.toolBox.indexOf(self.System), QCoreApplication.translate("MainWindow", u"Sistema", None))
+        self.unInstallButton_1.setText(QCoreApplication.translate("MainWindow", u"Proton Installer", None))
+        self.unInstallButton_2.setText(QCoreApplication.translate("MainWindow", u"Software Adicional", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Steam Integration", None))
+        self.toolBox.setItemText(self.toolBox.indexOf(self.Software), QCoreApplication.translate("MainWindow", u"Software", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Pantalla", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
         self.toolBox.setItemText(self.toolBox.indexOf(self.Options), QCoreApplication.translate("MainWindow", u"Options", None))
         self.logoTitle.setText("")
-        self.boxTitle.setText(QCoreApplication.translate("MainWindow", u"PROTON INSTALLER", None))
+        self.boxTitle.setText(QCoreApplication.translate("MainWindow", u"TWEAK - DECK", None))
         self.descTitle.setText(QCoreApplication.translate("MainWindow", u"Description:", None))
         self.descBox.setText("")
         self.installButton.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))

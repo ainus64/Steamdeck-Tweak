@@ -816,7 +816,7 @@ QToolBox::tab {
                       </font>
                      </property>
                      <property name="text">
-                      <string>PROTON INSTALLER</string>
+                      <string>TWEAK - DECK</string>
                      </property>
                     </widget>
                    </item>
