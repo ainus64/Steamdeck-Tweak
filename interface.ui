@@ -762,103 +762,80 @@ QToolBox::tab {
                    <enum>QFrame::Raised</enum>
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_7">
-                   <item alignment="Qt::AlignHCenter">
-                    <widget class="QLabel" name="logoTitle">
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>0</height>
-                      </size>
-                     </property>
-                     <property name="maximumSize">
-                      <size>
-                       <width>128</width>
-                       <height>128</height>
-                      </size>
-                     </property>
-                     <property name="sizeIncrement">
-                      <size>
-                       <width>0</width>
-                       <height>0</height>
-                      </size>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
+                   <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                    <widget class="QLabel" name="Logo">
                      <property name="text">
                       <string/>
                      </property>
                      <property name="pixmap">
                       <pixmap resource="theme.qrc">:/theme/icons/gamepad.svg</pixmap>
                      </property>
-                     <property name="scaledContents">
-                      <bool>true</bool>
-                     </property>
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
                     </widget>
                    </item>
-                   <item>
-                    <widget class="QLabel" name="boxTitle">
-                     <property name="maximumSize">
-                      <size>
-                       <width>16777215</width>
-                       <height>128</height>
-                      </size>
-                     </property>
+                   <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+                    <widget class="QLabel" name="Logo_Title">
                      <property name="font">
                       <font>
                        <family>bertina Sans</family>
-                       <pointsize>16</pointsize>
+                       <pointsize>14</pointsize>
                        <weight>75</weight>
+                       <italic>false</italic>
                        <bold>true</bold>
                       </font>
                      </property>
                      <property name="text">
-                      <string>TWEAK - DECK</string>
+                      <string>TWEAKS FOR STEAMDECK</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="frame_9">
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
                      </property>
                     </widget>
                    </item>
                   </layout>
+                  <zorder>frame_9</zorder>
+                  <zorder>Logo_Title</zorder>
+                  <zorder>Logo</zorder>
                  </widget>
                 </item>
-                <item alignment="Qt::AlignTop">
-                 <widget class="QFrame" name="boxContainer">
-                  <property name="enabled">
-                   <bool>true</bool>
+                <item>
+                 <widget class="QFrame" name="Tools">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
                   </property>
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
                   </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>16777215</width>
-                    <height>16777215</height>
-                   </size>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignVCenter">
+                 <widget class="QFrame" name="Language">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
                   </property>
-                  <property name="styleSheet">
-                   <string notr="true">/* Button Styles */
-QPushButton{
-	font-size: 16px;
-	font-weight:  bold;
-	text-align: left;
-	margin: 3px;
-	font-family: &quot;Betina Sans&quot;;
-	padding: 5px 5px;
-	background-color: rgb(59, 59, 90);
-	border-radius: 5px;
-}
-QPushButton:hover{
-	background-color: rgb(255, 0, 127);
-}
-QPushButton:pressed{
-	background-color: rgb(185, 0, 92);
-}</string>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
                   </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="Partition">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="SuperUser">
                   <property name="frameShape">
                    <enum>QFrame::StyledPanel</enum>
                   </property>
@@ -866,8 +843,8 @@ QPushButton:pressed{
                    <enum>QFrame::Raised</enum>
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_6">
-                   <item>
-                    <widget class="QLabel" name="descTitle">
+                   <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+                    <widget class="QLabel" name="Title">
                      <property name="font">
                       <font>
                        <family>bertina Sans</family>
@@ -877,111 +854,21 @@ QPushButton:pressed{
                       </font>
                      </property>
                      <property name="text">
-                      <string>Description:</string>
+                      <string>Super Usuario</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QFrame" name="frame_8">
-                     <property name="frameShape">
-                      <enum>QFrame::StyledPanel</enum>
+                    <widget class="QLabel" name="label_2">
+                     <property name="text">
+                      <string>TextLabel</string>
                      </property>
-                     <property name="frameShadow">
-                      <enum>QFrame::Raised</enum>
-                     </property>
-                     <layout class="QHBoxLayout" name="horizontalLayout_4">
-                      <item>
-                       <widget class="QLabel" name="descBox">
-                        <property name="enabled">
-                         <bool>true</bool>
-                        </property>
-                        <property name="sizePolicy">
-                         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-                          <horstretch>0</horstretch>
-                          <verstretch>0</verstretch>
-                         </sizepolicy>
-                        </property>
-                        <property name="maximumSize">
-                         <size>
-                          <width>1080</width>
-                          <height>720</height>
-                         </size>
-                        </property>
-                        <property name="sizeIncrement">
-                         <size>
-                          <width>0</width>
-                          <height>0</height>
-                         </size>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">*{
-	font-style: italic;
-}</string>
-                        </property>
-                        <property name="text">
-                         <string/>
-                        </property>
-                        <property name="alignment">
-                         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                        </property>
-                        <property name="wordWrap">
-                         <bool>true</bool>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
                     </widget>
                    </item>
-                   <item alignment="Qt::AlignHCenter">
-                    <widget class="QPushButton" name="installButton">
-                     <property name="enabled">
-                      <bool>true</bool>
-                     </property>
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
+                   <item>
+                    <widget class="QPushButton" name="pushButton_4">
                      <property name="text">
                       <string>PushButton</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QFrame" name="BoxDownload">
-                  <property name="maximumSize">
-                   <size>
-                    <width>16777215</width>
-                    <height>50</height>
-                   </size>
-                  </property>
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_8">
-                   <item alignment="Qt::AlignBottom">
-                    <widget class="QProgressBar" name="progressBar">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="maximumSize">
-                      <size>
-                       <width>16777215</width>
-                       <height>16777215</height>
-                      </size>
-                     </property>
-                     <property name="value">
-                      <number>24</number>
                      </property>
                     </widget>
                    </item>
